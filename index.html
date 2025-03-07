@@ -20,7 +20,6 @@
 				<div class="nav-links">
 					<a href="#home" class="active">HOME</a>
 					<a href="#work">WORK</a>
-					<a href="#about">ABOUT</a>
 					<a href="#contact">CONTACT</a>
 				</div>
 			</div>
@@ -71,7 +70,12 @@
 					<p class="content__text content__text--left"><span>From Thrones to Chains</span> <span>Surrender of Sovereignty</span></p>
 				</div>
 				<div id="item-3" class="content">
+					
 					<div class="content__img-wrap">
+					
+					<div id="about" class="section-title">
+					<h2>About Me</h2>
+				</div>
 						<div class="content__img content__img--2">
 							<div class="content__img-inner" style="background-image:url(img/7.jpg);"></div>
 							<div class="content__img-inner content__img-inner--hidden" style="background-image:url(img/8.jpg);"></div>
@@ -86,6 +90,7 @@
 				</div>
 				<div id="item-4" class="content">
 					<div class="content__img-wrap">
+					
 						<div class="content__img content__img--4">
 							<div class="content__img-inner" style="background-image:url(img/9.jpg);"></div>
 							<div class="content__img-inner content__img-inner--hidden" style="background-image:url(img/10.jpg);"></div>
@@ -95,6 +100,9 @@
 				</div>
 				<div id="item-5" class="content">
 					<div class="content__img-wrap">
+						<div id="testimony" class="section-title">
+							<h2>Testimony</h2>
+						</div>
 						<div class="content__img content__img--5">
 							<div class="content__img-inner" style="background-image:url(img/16.jpg);"></div>
 							<div class="content__img-inner content__img-inner--hidden" style="background-image:url(img/15.jpg);"></div>
@@ -104,51 +112,65 @@
 				</div>
 				<div id="item-6" class="content">
 					<div class="content__img-wrap">
+						<div id="about" class="section-title">
+							<h2>rewind</h2>
+						</div>
 						<div class="content__img content__img--6">
 							<div class="content__img-inner" style="background-image:url(img/17.jpg);"></div>
 						</div>
 					</div>
 					<p class="content__text content__text--center"><span>You were never truly loved</span> <span>You have only been betrayed</span></p>
 				</div>
+				<div id="contact" class="section-title">
+					<h2>Contact</h2>
+				</div>
 			</div>
-				<div id="about" class="section-title">
-				<h2>About Me</h2>
-			</div>
-			<div class="content">
-				<p class="about-text">I'm a creative developer passionate about building innovative digital experiences. With expertise in modern web technologies, I create visually stunning and functionally robust solutions that push the boundaries of what's possible on the web.</p>
-			</div>
-			<div id="contact" class="section-title">
-				<h2>Contact</h2>
-			</div>
+		
 			<div class="content">
 				<div class="contact-container">
-					<p>Interested in working together? Let's connect!</p>
-					<a href="mailto:hello@example.com" class="button button--primary">hello@example.com</a>
-				</div>
-				<h2 class="content__title">More you might like</h2>
-				<div class="card-wrap">
-					<div class="card">
-						<a href="https://tympanus.net/Development/OnScrollColumnsRows/" class="card__image" style="background-image:url(https://tympanus.net/codrops/wp-content/uploads/2023/08/OnScrollColumns.jpg)"></a>
-						<p class="card__title"><a href="https://tympanus.net/Development/OnScrollColumnsRows/">On-Scroll Column & Row Animations</a></p>
+					<div class="contact-info">
+						<h3>Let's Work Together</h3>
+						<p class="contact-description">Ready to start a project? Get in touch with me and let's create something amazing together.</p>
+						<div class="contact-details">
+							<div class="contact-item">
+								<span class="contact-label">Email:</span>
+								<a href="mailto:your.email@example.com">your.email@example.com</a>
+							</div>
+							<div class="contact-item">
+								<span class="contact-label">Location:</span>
+								<span>New York, NY</span>
+							</div>
+							<div class="contact-social">
+								<a href="#" class="social-link">LinkedIn</a>
+								<a href="#" class="social-link">GitHub</a>
+								<a href="#" class="social-link">Twitter</a>
+							</div>
+						</div>
 					</div>
-					<div class="card">
-						<a href="http://tympanus.net/Development/Scroll3DGrid/" class="card__image" style="background-image:url(https://tympanus.net/codrops/wp-content/uploads/2023/08/onscroll3dgrid.jpg)"></a>
-						<p class="card__title"><a href="http://tympanus.net/Development/Scroll3DGrid/">On-Scroll Perspective Grid Animations</a></p>
-					</div>
-					<div class="card">
-						<a href="http://tympanus.net/Development/OnScrollFilter/" class="card__image" style="background-image:url(https://tympanus.net/codrops/wp-content/uploads/2023/07/onscrollfilter_feat-2.jpg)"></a>
-						<p class="card__title"><a href="http://tympanus.net/Development/OnScrollFilter/">On-Scroll SVG Filter Effect</a></p>
-					</div>
+					<form class="contact-form">
+						<div class="form-group">
+							<input type="text" id="name" name="name" placeholder="Your Name" required>
+						</div>
+						<div class="form-group">
+							<input type="email" id="email" name="email" placeholder="Your Email" required>
+						</div>
+						<div class="form-group">
+							<input type="text" id="subject" name="subject" placeholder="Subject" required>
+						</div>
+						<div class="form-group">
+							<textarea id="message" name="message" placeholder="Your Message" required></textarea>
+						</div>
+						<button type="submit" class="button button--primary">Send Message</button>
+					</form>
 				</div>
 			</div>
-			<p class="credits">Made by <a href="https://twitter.com/codrops">@codrops</a></p>
 		</main>
 		<script src="js/imagesloaded.pkgd.min.js"></script>
 		<script src="js/splitting.min.js"></script>
 		<script src="js/gsap.min.js"></script>
 		<script src="js/ScrollTrigger.min.js"></script>
 		<script src="js/lenis.min.js"></script>
-			<script src="js/particles.js"></script>
+		<script src="js/particles.js"></script>
 		<script type="module" src="js/index.js"></script>
 		<script type="module" src="js/navigation.js"></script>
 	</body>

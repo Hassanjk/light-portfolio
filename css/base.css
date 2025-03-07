@@ -203,6 +203,80 @@ body {
 	}
 }
 
+/* Contact Form Styles */
+.contact-form {
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 2rem;
+	background: rgba(255, 255, 255, 0.05);
+	border-radius: 15px;
+	backdrop-filter: blur(10px);
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+	margin-bottom: 1.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+	width: 100%;
+	padding: 1rem;
+	background: rgba(255, 255, 255, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 8px;
+	color: var(--color-text);
+	font-size: 1rem;
+	transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+	outline: none;
+	border-color: var(--color-accent-2);
+	box-shadow: 0 0 15px rgba(5, 217, 232, 0.3);
+}
+
+.form-group textarea {
+	min-height: 150px;
+	resize: vertical;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+	.intro-layout {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+
+	.intro__right {
+		height: 400px;
+	}
+
+	.hero-image {
+		right: 0;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.nav-links {
+		display: none;
+	}
+
+	.intro__title-main {
+		font-size: clamp(2.5rem, 8vw, 4rem);
+	}
+
+	.contact-form {
+		margin: 0 1rem;
+	}
+}
 @media screen and (max-width: 768px) {
 	.nav-links {
 		display: none;
@@ -298,6 +372,10 @@ body {
     box-shadow: 0 0 10px var(--color-accent-2);
 }
 
+#contact.section-title {
+    margin-bottom: 8rem;
+}
+
 .about-text {
     max-width: 800px;
     margin: 0 auto;
@@ -320,6 +398,130 @@ body {
 .contact-container p {
     font-size: 1.5rem;
     color: var(--color-accent-2);
+}
+
+/* Updated Contact Section Styles */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.contact-info {
+    padding: 2rem;
+}
+
+.contact-info h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, var(--color-accent-1) 0%, var(--color-accent-2) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2.5rem;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-label {
+    color: var(--color-accent-2);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-item a {
+    color: var(--color-text);
+    text-decoration: none;
+    transition: color var(--transition-speed) ease;
+}
+
+.contact-item a:hover {
+    color: var(--color-accent-2);
+}
+
+.contact-social {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-link {
+    color: var(--color-text);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    transition: all var(--transition-speed) ease;
+}
+
+.social-link:hover {
+    color: var(--color-accent-2);
+    border-color: var(--color-accent-2);
+    transform: translateY(-2px);
+}
+
+.contact-form {
+    max-width: none;
+    width: 100%;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1.2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    color: var(--color-text);
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group textarea {
+    min-height: 200px;
+}
+
+@media screen and (max-width: 968px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contact-info {
+        padding: 1rem;
+    }
+    
+    .contact-form {
+        padding: 2rem;
+    }
 }
 
 /* Rest of the existing CSS remains unchanged */
